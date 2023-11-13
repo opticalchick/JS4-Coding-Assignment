@@ -104,9 +104,28 @@ fullName('Molly', 'Pug');
 
 //Task 10
 //Write a function that takes an array of numbers and returns the average of all the elements in the array.
+let nums = [12, 26, 42, 87, 35, 16];
+function getAve(nums) {
+    let sum = 0;
+    nums.forEach(num => {
+        sum += num;
+    });
+    return sum / nums.length
+}
+console.log(getAve(nums));
 
 //Task 11
 //Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
 //Task 12
 //Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    if (isHotOutside === true && moneyInPocket > 10.50) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(willBuyDrink(true, 11));
+

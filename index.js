@@ -7,12 +7,24 @@
 // Use a loop to iterate through the array and calculate the average age.
 
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];
-//let minusAge = ages[ages.length - 1] - ages[0];
-//console.log(minusAge);
-
-ages.push(17);
 let minusAge = ages[ages.length - 1] - ages[0];
 console.log(minusAge);
+
+ages.push(17);
+let minusAge2 = ages[ages.length - 1] - ages[0];
+console.log(minusAge2);
+
+let sumOfAges = 0;
+for (let i = 0; i < ages.length; i++) {
+    sumOfAges += ages[i]
+}
+
+let average = sumOfAges / ages.length;
+console.log(average);
+
+//Task 2
+
+
 
 
 

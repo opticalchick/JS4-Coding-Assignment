@@ -87,7 +87,7 @@ function thisFunction(word, n) {
         result += word;
     } return result;
 };
-console.log(thisFunction('Hello', 3));
+console.log(thisFunction('Smile', 5));
 
 //Task 8
 //Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.
@@ -100,7 +100,27 @@ fullName('Molly', 'Pug');
 
 //Task 9
 //Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+let nums1 = [12, 36, 28, 93, 77]
+let nums2 = [10, 16, 20, 5]
 
+function higherThanHundo(array) {
+    let total = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        total += array[i];
+        console.log(total);
+    }
+
+    if (total > 100) {
+        console.log(total, 'true');
+        return true;
+    } else {
+        console.log(total, 'false');
+        return false;
+    }
+}
+
+higherThanHundo(nums1);
 
 //Task 10
 //Write a function that takes an array of numbers and returns the average of all the elements in the array.
@@ -116,6 +136,33 @@ console.log(getAve(nums));
 
 //Task 11
 //Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+
+let nums3 = [10, 4, 16, 29, 36, 45]
+let nums4 = [8, 6, 42, 57, 22, 71]
+function twoArrays(array1, array2) {
+    console.log('Parameters:', array1, array2);
+
+    // let sum3 = 0;
+    // for (let i = 0; i < array1.length; i++) {
+    //     sum3 += array1[i];
+    //     console.log(sum3)
+    // }
+    // let sum4 = 0;
+    // for (let i = 0; i < array2.length; i++) {
+    //     sum4 += array2[i];
+    //     return sum4;
+    // }
+    // if (sum3 > sum4) {
+    //     console.log('true');
+    //     return true;
+    // } else {
+    //     console.log('false');
+    //     return false;
+    // }
+}
+
+twoArrays(nums3, nums4);
+
 
 //Task 12
 //Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.

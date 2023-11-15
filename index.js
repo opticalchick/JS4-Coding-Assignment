@@ -108,19 +108,17 @@ function higherThanHundo(array) {
 
     for (let i = 0; i < array.length; i++) {
         total += array[i];
-        console.log(total);
     }
 
     if (total > 100) {
         console.log(total, 'true');
-        return true;
     } else {
         console.log(total, 'false');
-        return false;
     }
 }
 
 higherThanHundo(nums1);
+
 
 //Task 10
 //Write a function that takes an array of numbers and returns the average of all the elements in the array.
@@ -137,30 +135,28 @@ console.log(getAve(nums));
 //Task 11
 //Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
-let nums3 = [10, 4, 16, 29, 36, 45]
-let nums4 = [8, 6, 42, 57, 22, 71]
+let nums3 = [10, 45, 16, 29, 36, 45]
+let nums4 = [8, 6, 42, 57, 22]
+
 function twoArrays(array1, array2) {
-    console.log('Parameters:', array1, array2);
+    let sum2 = 0;
+    let sum3 = 0;
 
-    // let sum3 = 0;
-    // for (let i = 0; i < array1.length; i++) {
-    //     sum3 += array1[i];
-    //     console.log(sum3)
-    // }
-    // let sum4 = 0;
-    // for (let i = 0; i < array2.length; i++) {
-    //     sum4 += array2[i];
-    //     return sum4;
-    // }
-    // if (sum3 > sum4) {
-    //     console.log('true');
-    //     return true;
-    // } else {
-    //     console.log('false');
-    //     return false;
-    // }
+    for (let i = 0; i < array1.length; i++) {
+        sum2 += array1[i];
+    }
+    for (let j = 0; j < array2.length; j++) {
+        sum3 += array2[j];
+    }
+    let ave1 = sum2 / array1.length;
+    let ave2 = sum3 / array2.length;
+
+    if (ave1 > ave2) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 }
-
 twoArrays(nums3, nums4);
 
 
